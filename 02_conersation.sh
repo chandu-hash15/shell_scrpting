@@ -1,7 +1,7 @@
 #!/bin/bash
-person1=sriram
-person2=vamsi
-echo "$person1 : hello $person2, how are you?"
-echo "$person2 : I am fine, thank you! $person1. nice to meet you!"
-echo "$person1 : nice to meet you too, $person2 .,;!"
+var1=$1
+var2=$2
+echo "$var1 : hello $var2, how are you?"
+echo "$var2 : I am fine, thank you! $var1. nice to meet you!"
+echo "$var1 : nice to meet you too, $var2 .,;!"
 echo "End of conversation."
