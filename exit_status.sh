@@ -13,6 +13,5 @@ if [ $? -ne 0 ]; then
 
 else  
     echo"mysql installation successful"
-    exit 1
 fi
 
