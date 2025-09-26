@@ -2,7 +2,7 @@
 
 echo "Thanks for using HDFSC services"
 echo "Please enter your ATM pin:"
-read PIN_NUMBWER
+read PIN_NUMBER
 echo "re-enter your pin:"
 read ATM_PIN
 if ["PIN_NUMBER" eq "ATM_PIN"];
