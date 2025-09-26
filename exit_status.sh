@@ -14,3 +14,11 @@ else
     echo "mysql installation successful"
 fi
 
+dnf install python3 -y
+if [ $? -eq 0 ]; then
+    echo "python3 installation successful"  # here we are repeatting the same code which is not a good practice so we can use functions to avoid code repetition
+else  
+    echo "python3 installed failed"
+    exit 1
+fi
+
