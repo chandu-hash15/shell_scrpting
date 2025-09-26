@@ -7,10 +7,12 @@ else
     echo "you are root user"
 fi  
 dnf install mysql -y
-if [ $? -eq 0 ]; then
-    echo "mysql installed successfully"
-else
-    echo "mysql installation failed"
+if [ $? -ne 0 ]; then
+    echo "mysql installed failed
+    exit 1
+
+else  
+    echo"mysql installation successful"
     exit 1
 fi
 
