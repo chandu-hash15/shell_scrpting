@@ -2,9 +2,9 @@
 
 echo "Thanks for using HDFSC services"
 echo "Please enter your ATM pin:"
-read PIN_NUMBER
+read -s PIN_NUMBER
 echo "re-enter your pin:"
-read ATM_PIN
+read -s ATM_PIN
 if [[ "$PIN_NUMBER" == "$ATM_PIN" ]];
 then
   echo "Your pin is correct proceeding..."
