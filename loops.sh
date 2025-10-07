@@ -33,7 +33,7 @@ do
     dnf list installed $tools &>>$LOG_FILE
     if [ $? ne 0 ]; then
         dnf install $tools -y &>>$LOG_FILE
-        validate $? "$tools"
+        validate $? $tools
     else
         echo -e "$tools already installed $Y SHIPPING $N"
     fi
