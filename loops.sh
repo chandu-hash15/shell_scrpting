@@ -28,7 +28,7 @@ validate() {
 
 mkdir -p $LOG_FOLDER
 
-for $tools in $@;
+for tools in $@;
 do
     dnf list installed $tools &>>$LOG_FILE
     if [ $? -ne 0 ]; then
