@@ -1,12 +1,12 @@
 #!/bin/bas
 
-R = "\e[31m"
-G = "\e[32m"
-Y = "\e[33m"
-N = "\e[0m"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 
-LOG_FOLDER= "/var/log/sell_script"
+LOG_FOLDER= "/var/log/sell_scripting"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE= "$LOG_FOLDER/$SCRIPT_NAME.log" #/var/log/shell_script/loops.log
 
