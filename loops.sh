@@ -17,7 +17,7 @@ if [ $USER_ID -ne 0 ];then
 else
     echo " you are root user "
 fi
-valiidate() {
+validate() {
     if [ $? -ne 0 ]; then
         echo -e " $2 installation failed $R installation failed $N" 
        exit 1
@@ -31,9 +31,9 @@ mkdir -p $LOG_FOLDER
 for $tools in $@;
 do
     dnf list installed $tools &>>$LOG_FILE
-    if [ $? ne 0 ]; then
+    if [ $? -ne 0 ]; then
         dnf install $tools -y &>>$LOG_FILE
-        validate $? $tools
+        validate $? "$tools"
     else
         echo -e "$tools already installed $Y SHIPPING $N"
     fi
