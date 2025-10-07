@@ -30,9 +30,9 @@ mkdir -p $LOG_FOLDER
 
 for $tools in $@;
 do
-    dnf list installed $tools &>> $LOG_FILE
+    dnf list installed $tools &>>$LOG_FILE
     if [ $? ne 0 ]; then
-        dnf install $tools -y &>> $LOG_FILE
+        dnf install $tools -y &>>$LOG_FILE
         validate $? "$tools"
     else
         echo -e "$tools already installed $Y SHIPPING $N"
