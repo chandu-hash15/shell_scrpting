@@ -1,0 +1,20 @@
+{
+  // Disable inline (ghost) suggestions
+  "editor.inlineSuggest.enabled": false,
+
+  // Turn off quick suggestions while typing (you can re-enable specific scopes)
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+
+  // Prevent Tab from accepting suggestions (stop tab-triggered completions)
+  "editor.tabCompletion": "off",
+
+  // Reduce snippet influence in suggestion list
+  "editor.suggest.showSnippets": false,
+
+  // If GitHub Copilot is installed, disable its inline suggestions for this workspace
+  "github.copilot.inlineSuggest.enable": false
+}
