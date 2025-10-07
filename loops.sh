@@ -10,8 +10,8 @@ LOG_FOLDER="/var/log/shell_script"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log" #/var/log/shell_script/loops.log
 
-USER_ID=$(id)
-if [ $USER_ID -ne 0 ]; then
+USER_ID=$(id -u)
+if [ $USER_ID -ne 0 ];then
     echo " you ate not a root user "
     exit 1
 else
